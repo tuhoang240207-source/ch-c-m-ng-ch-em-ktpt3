@@ -3,27 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chúc Mừng Sinh Nhật Mẹ Yêu Dấu 🌸</title>
+    <title>Chúc mừng 20/10 - QH-2025-E KTPT3</title>
     <style>
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
         }
-
         body {
-            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-            background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;
             align-items: center;
             overflow-x: hidden;
             position: relative;
-            padding: 20px;
         }
-
-        /* Hiệu ứng cánh hoa rơi */
+        
         .petal {
             position: absolute;
             background-color: #ffb6c1;
@@ -44,37 +41,24 @@
             }
         }
 
-        /* Thẻ Container chính */
         .card-container {
-            background: rgba(255, 255, 255, 0.92);
+            background: rgba(255, 255, 255, 0.9);
             padding: 40px 30px;
-            border-radius: 24px;
-            box-shadow: 0 20px 40px rgba(216, 27, 96, 0.15);
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(230, 81, 0, 0.15);
             text-align: center;
             max-width: 550px;
-            width: 100%;
+            width: 90%;
             z-index: 10;
-            backdrop-filter: blur(8px);
-            border: 2px solid #ffffff;
-            animation: fadeIn 1.2s ease-in-out;
-        }
-
-        .heart-icon {
-            font-size: 55px;
-            color: #e91e63;
-            margin-bottom: 10px;
-            display: inline-block;
-            animation: beat 1.1s infinite alternate;
-        }
-
-        @keyframes beat {
-            to { transform: scale(1.18); }
+            backdrop-filter: blur(5px);
+            border: 2px solid #fff;
+            animation: fadeIn 1.5s ease-in-out;
         }
 
         h1 {
             color: #d81b60;
-            font-size: 24px;
-            margin-bottom: 8px;
+            font-size: 26px;
+            margin-bottom: 10px;
             text-transform: uppercase;
             letter-spacing: 1px;
         }
@@ -86,41 +70,50 @@
             font-size: 16px;
         }
 
+        .heart-icon {
+            font-size: 50px;
+            color: #e91e63;
+            margin: 15px 0;
+            animation: beat 1s infinite alternate;
+        }
+
+        @keyframes beat {
+            to { transform: scale(1.15); }
+        }
+
         .btn-open {
             background: linear-gradient(45deg, #ec407a, #ab47bc);
             color: white;
-            padding: 14px 32px;
+            padding: 12px 28px;
             border: none;
-            border-radius: 30px;
+            border-radius: 25px;
             font-size: 16px;
             font-weight: bold;
             cursor: pointer;
-            box-shadow: 0 6px 18px rgba(233, 30, 99, 0.35);
+            box-shadow: 0 5px 15px rgba(233, 30, 99, 0.3);
             transition: all 0.3s ease;
         }
 
         .btn-open:hover {
             transform: translateY(-3px);
-            box-shadow: 0 10px 25px rgba(233, 30, 99, 0.5);
+            box-shadow: 0 8px 20px rgba(233, 30, 99, 0.5);
         }
 
-        /* Khung nội dung lời chúc */
         .letter-content {
             display: none;
             margin-top: 25px;
             text-align: left;
-            line-height: 1.8;
+            line-height: 1.7;
             color: #37474f;
             background: #fff5f8;
-            padding: 22px;
-            border-radius: 16px;
-            border-left: 5px solid #ec407a;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #ec407a;
             animation: slideDown 0.8s ease-out forwards;
         }
 
-        .typing-text {
-            font-size: 15px;
-            white-space: pre-wrap;
+        .letter-content p {
+            margin-bottom: 12px;
         }
 
         .footer-text {
@@ -128,7 +121,6 @@
             font-weight: bold;
             color: #d81b60;
             margin-top: 15px;
-            font-style: italic;
         }
 
         @keyframes fadeIn {
@@ -144,61 +136,43 @@
 </head>
 <body>
 
-    <!-- Nhạc nền nhẹ nhàng -->
     <audio id="bg-music" loop>
         <source src="https://assets.mixkit.co/music/preview/mixkit-beautiful-dream-493.mp3" type="audio/mpeg">
     </audio>
 
     <div class="card-container">
         <div class="heart-icon">💖</div>
-        <h1>HAPPY BIRTHDAY</h1>
-        <div class="subtitle">Chúc Mừng Sinh Nhật Mẹ Yêu Dấu 🌸</div>
+        <h1>HAPPY VIETNAMESE WOMEN'S DAY</h1>
+        <div class="subtitle">Gửi Chị Em Lớp QH-2025-E KTPT3 🌸</div>
 
-        <button class="btn-open" id="btn-toggle" onclick="toggleLetter()">Bấm Vào Đây Để Mở Thư ✉️</button>
+        <button class="btn-open" onclick="toggleLetter()">Bấm Vào Đây Để Mở Thư ✉️</button>
 
         <div class="letter-content" id="letter">
-            <div class="typing-text" id="typewriter"></div>
-            <div class="footer-text">— Con yêu Mẹ rất nhiều! ❤️ —</div>
+            <p><strong>Thân gửi toàn thể chị em xinh đẹp lớp KTPT3!</strong></p>
+            <p>Nhân ngày Phụ nữ Việt Nam 20/10, nam thần KTPT3 xin gửi tới các bạn những lời chúc ngọt ngào nhất:</p>
+            <ul>
+                <li>✨ <strong>Nhan sắc:</strong> Tươi tắn, rạng rỡ và luôn tự tin tỏa sáng.</li>
+                <li>📈 <strong>Học tập:</strong> Cân gọn mọi deadline, chỉ số hạnh phúc luôn tăng trưởng vượt bậc!</li>
+                <li>☘️ <strong>Cuộc sống:</strong> Tràn ngập niềm vui, tiếng cười và thật nhiều may mắn.</li>
+            </ul>
+            <p style="margin-top:10px;">Cảm ơn chị em đã luôn là mảnh ghép xinh đẹp và tuyệt vời nhất của KTPT3! 💕</p>
+            <div class="footer-text">— From KTPT3 Boys with love —</div>
         </div>
     </div>
 
     <script>
-        const message = "Gửi Mẹ yêu dấu của con,\n\nNhân ngày sinh nhật Mẹ, con xin kính chúc Mẹ luôn dồi dào sức khỏe, lúc nào cũng an nhiên, vui vẻ và tràn ngập hạnh phúc bên gia đình.\n\nCảm ơn Mẹ vì đã luôn hy sinh, yêu thương và là điểm tựa vững chắc nhất cho con. Chúc Mẹ một tuổi mới thật nhiều may mắn và luôn bình an! 🌸✨";
-
-        let isOpened = false;
-        let charIndex = 0;
-
-        function typeEffect() {
-            if (charIndex < message.length) {
-                document.getElementById("typewriter").textContent += message.charAt(charIndex);
-                charIndex++;
-                setTimeout(typeEffect, 40);
-            }
-        }
-
         function toggleLetter() {
             var letter = document.getElementById("letter");
             var music = document.getElementById("bg-music");
-            var btn = document.getElementById("btn-toggle");
-
-            if (!isOpened) {
+            
+            if (letter.style.display === "none" || letter.style.display === "") {
                 letter.style.display = "block";
-                music.play().catch(e => console.log("Audio play blocked"));
-                typeEffect();
-                btn.textContent = "Thu Gọn Thư 💌";
-                isOpened = true;
+                music.play();
             } else {
-                if (letter.style.display === "none") {
-                    letter.style.display = "block";
-                    btn.textContent = "Thu Gọn Thư 💌";
-                } else {
-                    letter.style.display = "none";
-                    btn.textContent = "Bấm Vào Đây Để Mở Thư ✉️";
-                }
+                letter.style.display = "none";
             }
         }
 
-        // Tạo hiệu ứng cánh hoa rơi
         function createPetal() {
             const petal = document.createElement('div');
             petal.classList.add('petal');
@@ -217,7 +191,7 @@
             }, 10000);
         }
 
-        setInterval(createPetal, 350);
+        setInterval(createPetal, 300);
     </script>
 </body>
 </html>
