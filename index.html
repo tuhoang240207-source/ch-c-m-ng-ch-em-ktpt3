@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chúc mừng 20/10 - QH-2025-E KTPT3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #ff9a9e 0%, #fecfef 99%, #fecfef 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow-x: hidden;
+            position: relative;
+        }
+        
+        /* Hiệu ứng hoa rơi */
+        .petal {
+            position: absolute;
+            background-color: #ffb6c1;
+            border-radius: 150% 0 150% 0;
+            animation: animatePetal 10s linear infinite;
+            z-index: 1;
+            opacity: 0.7;
+        }
+
+        @keyframes animatePetal {
+            0% {
+                top: -10%;
+                transform: translateX(0) rotate(0deg);
+            }
+            100% {
+                top: 110%;
+                transform: translateX(100px) rotate(360deg);
+            }
+        }
+
+        /* Thẻ Container */
+        .card-container {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 40px 30px;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(230, 81, 0, 0.15);
+            text-align: center;
+            max-width: 550px;
+            width: 90%;
+            z-index: 10;
+            backdrop-filter: blur(5px);
+            border: 2px solid #fff;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            color: #d81b60;
+            font-size: 26px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .subtitle {
+            font-weight: 600;
+            color: #8e24aa;
+            margin-bottom: 25px;
+            font-size: 16px;
+        }
+
+        .heart-icon {
+            font-size: 50px;
+            color: #e91e63;
+            margin: 15px 0;
+            animation: beat 1s infinite alternate;
+        }
+
+        @keyframes beat {
+            to { transform: scale(1.15); }
+        }
+
+        .btn-open {
+            background: linear-gradient(45deg, #ec407a, #ab47bc);
+            color: white;
+            padding: 12px 28px;
+            border: none;
+            border-radius: 25px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 5px 15px rgba(233, 30, 99, 0.3);
+            transition: all 0.3s ease;
+        }
+
+        .btn-open:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(233, 30, 99, 0.5);
+        }
+
+        /* Lời chúc chi tiết ẩn ban đầu */
+        .letter-content {
+            display: none;
+            margin-top: 25px;
+            text-align: left;
+            line-height: 1.7;
+            color: #37474f;
+            background: #fff5f8;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 4px solid #ec407a;
+            animation: slideDown 0.8s ease-out forwards;
+        }
+
+        .letter-content p {
+            margin-bottom: 12px;
+        }
+
+        .footer-text {
+            text-align: right;
+            font-weight: bold;
+            color: #d81b60;
+            margin-top: 15px;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- BGM Nhạc nền nhẹ nhàng -->
+    <audio id="bg-music" loop>
+        <source src="https://assets.mixkit.co/music/preview/mixkit-beautiful-dream-493.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="card-container">
+        <div class="heart-icon">💖</div>
+        <h1>HAPPY VIETNAMESE WOMEN'S DAY</h1>
+        <div class="subtitle">Gửi Chị Em Lớp QH-2025-E KTPT3 🌸</div>
+
+        <button class="btn-open" onclick="toggleLetter()">Bấm Vào Đây Để Mở Thư ✉️</button>
+
+        <div class="letter-content" id="letter">
+            <p><strong>Thân gửi toàn thể chị em xinh đẹp lớp KTPT3!</strong></p>
+            <p>Nhân ngày Phụ nữ Việt Nam 20/10, nam thần KTPT3 xin gửi tới các bạn những lời chúc ngọt ngào nhất:</p>
+            <ul>
+                <li>✨ <strong>Nhan sắc:</strong> Tươi tắn, rạng rỡ và luôn tự tin tỏa sáng.</li>
+                <li>📈 <strong>Học tập:</strong> Cân gọn mọi deadline, chỉ số hạnh phúc luôn tăng trưởng vượt bậc!</li>
+                <li>☘️ <strong>Cuộc sống:</strong> Tràn ngập niềm vui, tiếng cười và thật nhiều may mắn.</li>
+            </ul>
+            <p style="margin-top:10px;">Cảm ơn chị em đã luôn là mảnh ghép xinh đẹp và tuyệt vời nhất của KTPT3! 💕</p>
+            <div class="footer-text">— From KTPT3 Boys with love —</div>
+        </div>
+    </div>
+
+    <script>
+        // Mở thư & Phát nhạc
+        function toggleLetter() {
+            var letter = document.getElementById("letter");
+            var music = document.getElementById("bg-music");
+            
+            if (letter.style.display === "none" || letter.style.display === "") {
+                letter.style.display = "block";
+                music.play();
+            } else {
+                letter.style.display = "none";
+            }
+        }
+
+        // Tạo hiệu ứng cánh hoa rơi tự động
+        function createPetal() {
+            const petal = document.createElement('div');
+            petal.classList.add('petal');
+            
+            const size = Math.random() * 15 + 10 + 'px';
+            petal.style.width = size;
+            petal.style.height = size;
+            
+            petal.style.left = Math.random() * 100 + 'vw';
+            petal.style.animationDuration = Math.random() * 5 + 5 + 's';
+            
+            document.body.appendChild(petal);
+            
+            setTimeout(() => {
+                petal.remove();
+            }, 10000);
+        }
+
+        setInterval(createPetal, 300);
+    </script>
+</body>
+</html>
